@@ -1,0 +1,18 @@
+<html>
+    <script type=text/javascript src="{{url_for('static', filename='js/login.js') }}"></script>
+    <head>
+        <title>
+            {{title}}
+        </title>
+    </head>
+    <body>
+        <h1>
+            {{h1}}
+        </h1>
+        <div>
+            <input type="search" name="name" id="nome">
+            <input type="password" name="password" id="pass">
+            <button onclick="Login()">{{login}}</button>
+        </div>
+    </body>
+</html>
