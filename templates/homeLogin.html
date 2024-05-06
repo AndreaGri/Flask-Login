@@ -1,4 +1,5 @@
 <html>
+    <link rel="stylesheet" href="../static/css.css">
     <script type=text/javascript src="{{url_for('static', filename='js/login.js') }}"></script>
     <head>
         <title>
@@ -9,7 +10,7 @@
         <h1>
             {{h1}}
         </h1>
-        <div>
+        <div class="div1">
             <input type="search" name="name" id="nome">
             <input type="password" name="password" id="pass">
             <button onclick="Login()">{{login}}</button>

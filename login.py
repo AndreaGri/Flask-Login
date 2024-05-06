@@ -3,18 +3,21 @@ app = Flask(__name__)
 
 
 
+@app.route('/')
+def home():
+  return render_template('home.html')
 
 @app.route('/csv')
 def csv():
     import pandas as pd
     df = pd.read_csv('/workspace/Flask-Login/data/login.csv')
+    info=df
+    return info.to_json()'''mettere true e false con return'''
 
 
-
-
-
-
-
+@app.route('/login/it')
+def login():
+  return render_template('homeLogin.html', Title='Login', h1='Login', login='Login')
 
 
 
