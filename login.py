@@ -12,7 +12,8 @@ def csv():
     import pandas as pd
     df = pd.read_csv('/workspace/Flask-Login/data/login.csv')
     info=df
-    return info.to_json()'''mettere true e false con return'''
+    
+    return '''mettere true e false con return'''
 
 
 @app.route('/login/it')
